@@ -1,3 +1,5 @@
+# Code by Wang Woo-seok
+
 import scrapy
 import requests
 import re
