@@ -1,3 +1,5 @@
+# code by 김태훈
+
 import random
 import time
 import requests
