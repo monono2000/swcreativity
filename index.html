@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>옷나왕</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Intro Section -->
+  <div id="intro-screen">
+    <div id="brand-name">옷나왕</div>
+    <div class="intro-content">
+      <div class="title"></div>
+      <button id="next-btn">Start</button>
+    </div>
+    <div id="footer">
+      <p>designed by<br>패줄개</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+<div id="main-content" style="display: none;">
+    <header>
+      <div id="brand-name">옷나왕</div>
+    </header>
+    <div id="footer">
+      <p>designed by<br>패줄개</p>
+    </div>
+    <div id="user-info">
+      <div class="title2"></div>
+      <h2>사용자 정보를 입력해주세요.</h2>
+      <!-- form에 id="user-info-form" 추가 -->
+      <form id="user-info-form">
+        <div class="category">
+          <h3>Season</h3>
+          <div class="checkbox-group">
+            <label><input type="radio" name="season" value="봄">봄</label>
+            <label><input type="radio" name="season" value="여름">여름</label>
+            <label><input type="radio" name="season" value="가을">가을</label>
+            <label><input type="radio" name="season" value="겨울">겨울</label>
+          </div>
+        </div>
+        <div class="category">
+          <h3>Style</h3>
+          <div class="checkbox-group">
+            <label><input type="radio" name="style" value="캐주얼">캐주얼</label>
+            <label><input type="radio" name="style" value="스트릿">스트릿</label>
+            <label><input type="radio" name="style" value="아메카지">아메카지</label>
+            <label><input type="radio" name="style" value="미니멀">미니멀</label>
+          </div>
+        </div>
+        <div class="category" id="color-options" style="display: none;">
+          <h3>Color</h3>
+          <select id="color-select" name="color">
+            <option value="">색상을 선택하세요</option>
+          </select>
+        </div>
+        <div class="category fit">
+          <h3>Fit</h3>
+          <div class="input-group">
+            <label for="height">키</label>
+            <input type="number" id="height" min="100" max="300" placeholder="100~300">
+            <span class="unit">CM</span>
+          </div>
+          <div class="input-group">
+            <label for="weight">체중</label>
+            <input type="number" id="weight" min="30" max="200" placeholder="30~200">
+            <span class="unit">KG</span>
+          </div>
+          <div class="input-group">
+            <label for="waist">허리<br>둘레</label>
+            <input type="number" id="waist" min="30" max="200" placeholder="30~200">
+            <span class="unit">CM</span>
+          </div>
+        </div>
+        <button type="submit" disabled>다음</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Second Content -->
+  <div id="second-content" style="display: none;">
+    <header>
+      <div id="brand-name">옷나왕</div>
+    </header>
+    <div id="footer">
+      <p>designed by<br>패줄개</p>
+    </div>
+    <section id="user-info">
+      <h2>추천 결과를 위한 추가 정보 입력</h2>
+      <form>
+        <div class="category">
+          <h3>취향 선택</h3>
+          <div class="checkbox-group">
+            <label><input type="radio" name="preference" value="실용성">실용성</label>
+            <label><input type="radio" name="preference" value="스타일">스타일</label>
+            <label><input type="radio" name="preference" value="트렌드">트렌드</label>
+          </div>
+        </div>
+        <button type="button" id="result-btn">결과 보기</button>
+      </form>
+    </section>
+  </div>
+
+<!-- Result Content -->
+<div id="result-content" style="display: none;">
+  <div class="mainheader">옷나왕</div>
+
+  <!-- 상단 중앙에 위치할 박스 -->
+  <div class="header-box">
+    <div class="header-text">추천 결과</div>
+  </div>
+
+  <div class="title3"></div>
+
+  <div id="footer">
+    <p>designed by<br>패줄개</p>
+  </div>
+  
+  <!-- large-box (큰 박스 3개를 담는 박스) -->
+  <div class="large-box">
+      <!-- 첫 번째 medium-box -->
+      <div class="medium-box">
+          <!-- 첫 번째 큰 박스 -->
+          <div class="big-box">
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 1" />
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 2" />
+              </div>
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 3" />
+              </div>
+              <div class="small-box"></div>
+          </div>
+
+          <!-- 동그라미 버튼 추가 (첫 번째 medium-box 안) -->
+          <div class="circle-button">
+              <div class="button-text">추천 1</div>
+          </div>
+      </div>
+
+      <!-- 두 번째 medium-box -->
+      <div class="medium-box">
+          <!-- 두 번째 큰 박스 -->
+          <div class="big-box">
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 6" />
+                  <img class="image" src="http s://via.placeholder.com/172x208" alt="이미지 7" />
+              </div>
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 8" />
+              </div>
+              <div class="small-box"></div>
+          </div>
+
+          <!-- 동그라미 버튼 추가 (두 번째 medium-box 안) -->
+          <div class="circle-button">
+              <div class="button-text">추천 2</div>
+          </div>
+      </div>
+
+      <!-- 세 번째 medium-box -->
+      <div class="medium-box">
+          <!-- 세 번째 큰 박스 -->
+          <div class="big-box">
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 11" />
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 12" />
+              </div>
+              <div class="small-box">
+                  <img class="image" src="https://via.placeholder.com/172x208" alt="이미지 13" />
+              </div>
+              <div class="small-box"></div>
+          </div>
+
+          <!-- 동그라미 버튼 추가 (세 번째 medium-box 안) -->
+          <div class="circle-button">
+              <div class="button-text">추천 3</div>
+          </div>
+      </div>      
+  </div>
+
+  <div class="custom-box">
+    <button id="home-button" onclick="goHome()">홈으로 돌아가기</button>
+  </div>
+  
+  
+  
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
