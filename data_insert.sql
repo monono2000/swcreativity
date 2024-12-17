@@ -117,6 +117,126 @@ INSERT INTO ColorMatching (style, season, outer_color, top_color, bottom_color) 
 ('Amekaji', 'Winter', 'Khaki', 'Brown', 'Light Blue'),
 ('Amekaji', 'Winter', 'Gray', 'White', 'Olive'),
 
+-- Street - Spring
+('Street', 'Spring', 'Black', 'Black', 'White'),          -- NULL을 Black으로 채움
+('Street', 'Spring', 'Gray', 'Gray', 'Navy'),             -- NULL을 Gray로 채움
+('Street', 'Spring', 'Black', 'Burgundy', 'Blue'),
+('Street', 'Spring', 'Black', 'Gray', 'Black'),
+('Street', 'Spring', 'White', 'White', 'Light Blue'),     -- NULL을 White로 채움
+('Street', 'Spring', 'Navy', 'Olive', 'Khaki'),
+('Street', 'Spring', 'Gray', 'Blue', 'Beige'),
+('Street', 'Spring', 'Black', 'White', 'Navy'),
+
+-- Street - Summer
+('Street', 'Summer', 'Black', 'Black', 'Gray'),           -- NULL을 Black으로 채움
+('Street', 'Summer', 'Gray', 'Gray', 'Light Blue'),       -- NULL을 Gray로 채움
+('Street', 'Summer', 'Khaki', 'Khaki', 'Denim'),          -- NULL을 Khaki로 채움
+('Street', 'Summer', 'Blue', 'Blue', 'Gray'),             -- NULL을 Blue로 채움
+('Street', 'Summer', 'Black', 'Black', 'Khaki'),
+('Street', 'Summer', 'Gray', 'White', 'Navy'),
+('Street', 'Summer', 'Burgundy', 'Blue', 'Olive'),
+('Street', 'Summer', 'Navy', 'Beige', 'Gray'),
+
+-- Street - Autumn
+('Street', 'Autumn', 'Gray', 'Black', 'White'),
+('Street', 'Autumn', 'Navy', 'Gray', 'Light Blue'),
+('Street', 'Autumn', 'Black', 'Black', 'Denim'),          -- NULL을 Black으로 채움
+('Street', 'Autumn', 'Khaki', 'Navy', 'Blue'),
+('Street', 'Autumn', 'Black', 'Olive', 'White'),
+('Street', 'Autumn', 'Gray', 'Beige', 'Khaki'),
+('Street', 'Autumn', 'Navy', 'Blue', 'Olive'),
+('Street', 'Autumn', 'Burgundy', 'Gray', 'White'),
+
+-- Street - Winter
+('Street', 'Winter', 'Black', 'White', 'Gray'),
+('Street', 'Winter', 'Black', 'Gray', 'Light Blue'),
+('Street', 'Winter', 'Navy', 'Beige', 'Olive'),
+('Street', 'Winter', 'Khaki', 'White', 'Gray'),
+('Street', 'Winter', 'Gray', 'Black', 'Denim'),
+('Street', 'Winter', 'Burgundy', 'Blue', 'Olive'),
+('Street', 'Winter', 'Navy', 'Light Blue', 'Gray'),
+('Street', 'Winter', 'Black', 'Olive', 'Beige'),
+
+-- Casual - Spring
+('Casual', 'Spring', 'Beige', 'White', 'Light Blue'),
+('Casual', 'Spring', 'Gray', 'Gray', 'Beige'),            -- NULL을 Gray로 채움
+('Casual', 'Spring', 'Black', 'Navy', 'Denim'),
+('Casual', 'Spring', 'Beige', 'White', 'Khaki'),
+('Casual', 'Spring', 'Navy', 'Olive', 'Blue'),
+('Casual', 'Spring', 'Gray', 'Black', 'Beige'),
+('Casual', 'Spring', 'White', 'Navy', 'Olive'),
+('Casual', 'Spring', 'Black', 'Khaki', 'Light Blue'),
+
+-- Casual - Summer
+('Casual', 'Summer', 'Gray', 'Gray', 'Denim'),            -- NULL을 Gray로 채움
+('Casual', 'Summer', 'Navy', 'Navy', 'Light Blue'),       -- NULL을 Navy로 채움
+('Casual', 'Summer', 'Beige', 'Beige', 'Olive'),          -- NULL을 Beige로 채움
+('Casual', 'Summer', 'Black', 'Black', 'Denim'),
+('Casual', 'Summer', 'White', 'Gray', 'Blue'),
+('Casual', 'Summer', 'Navy', 'Olive', 'Beige'),
+('Casual', 'Summer', 'Khaki', 'Light Blue', 'Black'),
+('Casual', 'Summer', 'Gray', 'Beige', 'Olive'),
+
+-- Casual - Autumn
+('Casual', 'Autumn', 'Gray', 'Beige', 'Light Blue'),
+('Casual', 'Autumn', 'Navy', 'Gray', 'Denim'),
+('Casual', 'Autumn', 'Black', 'White', 'Light Blue'),
+('Casual', 'Autumn', 'Beige', 'Olive', 'Khaki'),
+('Casual', 'Autumn', 'Gray', 'Black', 'Navy'),
+('Casual', 'Autumn', 'White', 'Light Blue', 'Olive'),
+('Casual', 'Autumn', 'Navy', 'Gray', 'Beige'),
+('Casual', 'Autumn', 'Black', 'White', 'Khaki'),
+
+-- Casual - Winter
+('Casual', 'Winter', 'Black', 'Gray', 'White'),
+('Casual', 'Winter', 'Gray', 'Light Blue', 'Navy'),
+('Casual', 'Winter', 'White', 'Olive', 'Beige'),
+('Casual', 'Winter', 'Navy', 'Gray', 'Khaki'),
+('Casual', 'Winter', 'Olive', 'Black', 'Light Blue'),
+('Casual', 'Winter', 'Gray', 'Beige', 'Navy'),
+('Casual', 'Winter', 'Black', 'Olive', 'Gray'),
+('Casual', 'Winter', 'Beige', 'White', 'Light Blue'),
+
+-- Minimal - Spring
+('Minimal', 'Spring', 'Black', 'White', 'Gray'),
+('Minimal', 'Spring', 'Gray', 'Beige', 'Navy'),
+('Minimal', 'Spring', 'Black', 'Black', 'Light Blue'),     -- NULL을 Black으로 채움
+('Minimal', 'Spring', 'Black', 'Gray', 'Denim'),
+('Minimal', 'Spring', 'White', 'Olive', 'Beige'),
+('Minimal', 'Spring', 'Navy', 'Khaki', 'Gray'),
+('Minimal', 'Spring', 'Beige', 'Black', 'Light Blue'),
+('Minimal', 'Spring', 'Gray', 'White', 'Navy'),
+
+-- Minimal - Summer
+('Minimal', 'Summer', 'Black', 'Black', 'Gray'),           -- NULL을 Black으로 채움
+('Minimal', 'Summer', 'Navy', 'Navy', 'Light Blue'),       -- NULL을 Navy로 채움
+('Minimal', 'Summer', 'Beige', 'Beige', 'Olive'),          -- NULL을 Beige로 채움
+('Minimal', 'Summer', 'Black', 'Black', 'Denim'),
+('Minimal', 'Summer', 'Navy', 'Olive', 'Gray'),
+('Minimal', 'Summer', 'White', 'Beige', 'Light Blue'),
+('Minimal', 'Summer', 'Gray', 'Khaki', 'Black'),
+('Minimal', 'Summer', 'Beige', 'Navy', 'White'),
+
+-- Minimal - Autumn
+('Minimal', 'Autumn', 'Navy', 'White', 'Light Blue'),
+('Minimal', 'Autumn', 'Black', 'Gray', 'Beige'),
+('Minimal', 'Autumn', 'Gray', 'Black', 'Khaki'),
+('Minimal', 'Autumn', 'Black', 'White', 'Denim'),
+('Minimal', 'Autumn', 'White', 'Olive', 'Gray'),
+('Minimal', 'Autumn', 'Navy', 'Beige', 'Light Blue'),
+('Minimal', 'Autumn', 'Gray', 'Khaki', 'Olive'),
+('Minimal', 'Autumn', 'Black', 'White', 'Brown'),
+
+-- Minimal - Winter
+('Minimal', 'Winter', 'Gray', 'Navy', 'Light Blue'),
+('Minimal', 'Winter', 'Black', 'Black', 'Gray'),
+('Minimal', 'Winter', 'White', 'Beige', 'Khaki'),
+('Minimal', 'Winter', 'Navy', 'Olive', 'Light Blue'),
+('Minimal', 'Winter', 'Gray', 'Black', 'White'),
+('Minimal', 'Winter', 'Beige', 'Light Blue', 'Olive'),
+('Minimal', 'Winter', 'Black', 'Gray', 'Navy'),
+('Minimal', 'Winter', 'White', 'Olive', 'Beige');
+
 -- Amekaji 모든 계절 올블랙 조합
 ('Amekaji', 'Spring', 'Black', 'Black', 'Black'),
 ('Amekaji', 'Summer', 'Black', 'Black', 'Black'),
