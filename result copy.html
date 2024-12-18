@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>옷나왕</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<body>
+  <div id="footer">
+    <p>designed by<br>패줄개</p>
+  </div>
+  <div class="title3"></div>
+
+<!-- Result Content -->
+<div id="result-content">
+    
+    <div class="mainheader">옷나왕</div>
+  
+    <!-- 상단 중앙에 위치할 박스 -->
+    <div class="header-box">추천 결과</div>
+    <div class="header-box-mini">추천 번호를 누르면 결과로 이동합니다.</div>
+    
+    <!-- large-box (큰 박스 3개를 담는 박스) -->
+    <div class="large-box">
+        <!-- 첫 번째 medium-box -->
+        <div class="medium-box">
+            <!-- 첫 번째 큰 박스 -->
+            <div class="big-box">
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/rec1.png" alt="이미지 1" />
+                    <img class="image" src="recommend_images_output/rec3.png" alt="이미지 2" />
+                </div>
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/rec2.png" alt="이미지 3" />
+                </div>
+                <div class="small-box"></div>
+            </div>
+  
+            <!-- 동그라미 버튼 추가 (첫 번째 medium-box 안) -->
+            <div class="circle-button" onclick="window.location.href='select_result1.html';">
+                <div class="button-text">추천 1</div>
+            </div>            
+        </div>
+  
+        <!-- 두 번째 medium-box -->
+        <div class="medium-box">
+            <!-- 두 번째 큰 박스 -->
+            <div class="big-box">
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/reco1.png" alt="이미지 6" />
+                    <img class="image" src="recommend_images_output/reco3.png" alt="이미지 7" /> 
+                </div>
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/reco2.png" alt="이미지 8" />
+                </div>
+                <div class="small-box"></div>
+            </div>
+  
+            <!-- 동그라미 버튼 추가 (두 번째 medium-box 안) -->
+            <div class="circle-button" onclick="window.location.href='select_result2.html';">
+                <div class="button-text">추천 2</div>
+            </div>  
+        </div>
+  
+        <!-- 세 번째 medium-box -->
+        <div class="medium-box">
+            <!-- 세 번째 큰 박스 -->
+            <div class="big-box">
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/recom1.png" alt="이미지 11" />
+                    <img class="image" src="recommend_images_output/recom3.png" alt="이미지 12" />
+                </div>
+                <div class="small-box">
+                    <img class="image" src="recommend_images_output/recom2.png" alt="이미지 13" />
+                </div>
+                <div class="small-box"></div>
+            </div>
+  
+            <!-- 동그라미 버튼 추가 (세 번째 medium-box 안) -->
+            <div class="circle-button" onclick="window.location.href='select_result3.html';">
+                <div class="button-text">추천 3</div>
+            </div>
+        </div>      
+    </div>
+  
+    <div class="custom-box">
+      <button id="home-button" onclick="goHome()">홈으로 돌아가기</button>
+    </div>
+
+    
+
+
+  <script src="result.js"></script>
+</body>
+</html>

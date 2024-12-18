@@ -1,0 +1,214 @@
+/* 전체 화면에 대해 기본 스타일 추가 */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  background-color: #f8f8f8; /* 배경색 */
+}
+
+/* 브랜드 이름 왼쪽 상단에 배치 */
+#brand-name {
+  color: #000;
+  text-align: center;
+  font-family: "Hakgyoansim Ttwimteul";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute; /* 절대 위치로 배치 */
+  top: 20px; /* 화면 상단에서 20px 떨어진 위치 */
+  left: 20px; /* 화면 왼쪽에서 20px 떨어진 위치 */
+}
+
+.title3 {
+  width: 150px;
+  position: absolute;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 319px;
+  background: url(nawangLogo.png) lightgray center / cover no-repeat;
+  top: 1%;
+  left: 83%;
+}
+
+/* Footer 스타일 (우측 하단에 배치) */
+#footer {
+  position: absolute; /* 화면 하단에 고정 */
+  bottom: 0px; /* 하단에서 20px 떨어진 위치 */
+  right: 20px; /* 우측에서 20px 떨어진 위치 */
+  color: #000;
+  text-align: center;
+  font-family: "Jalpullineunoneul";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* header-box: 상단 중앙 박스 */
+.header-box {
+  width: 40vw;
+  height: 7vh;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 1vw #6B7E88;
+  border-radius: 4vw;
+  border: 0.2vw solid black;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* 여백을 추가하여 텍스트가 박스를 넘지 않도록 함 */
+  box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+  overflow: hidden; /* 텍스트가 넘치지 않도록 숨김 처리 */
+  font-size: 47px;
+}
+
+.header-box-mini{
+  width: 30vw;
+  height: 3vh;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 1vw #6B7E88;
+  border-radius: 4vw;
+  position: absolute;
+  top: 19vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* 여백을 추가하여 텍스트가 박스를 넘지 않도록 함 */
+  box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+  overflow: hidden; /* 텍스트가 넘치지 않도록 숨김 처리 */
+  font-size: 20px;
+}
+
+.mainheader {
+  position: absolute;
+  top: 0vh;
+  left: 10%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 5vw;
+}
+
+/* large-box: 큰 박스를 담는 박스 */
+.large-box {
+  width: 90vw;
+  height: 60vh;
+  border-radius: 4vw;
+  border: 0.25vw solid black;
+  display: flex;
+  padding: 12vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: absolute;
+  top: 25vh;
+  left: 5vw;
+}
+
+/* medium-box: 각 big-box와 버튼을 묶는 박스 */
+.medium-box {
+  width: 10vw; /* 화면 너비의 80% */
+  height: 20vh; /* 화면 높이의 40% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh; /* big-box와 버튼 사이 간격 */
+  height: 100%;
+}
+
+/* big-box: 각 큰 박스 */
+.big-box {
+  width: 19vw;
+  height: 45vh;
+  border-radius: 1vw;
+  border: 0.15vw solid #000;
+  padding: 1vw;
+  box-sizing: border-box;
+  background-color: f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  justify-content: space-between;
+
+}
+
+/* small-box: 작은 박스 */
+.small-box {
+  width: 10vw; /* 화면 너비의 25% */
+  height: 20vh; /* 화면 높이의 40% */
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+/* 이미지 스타일 */
+.image {
+  height: 20vh;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 0.4vw rgba(0, 0, 0, 0.2);
+}
+
+/* 동그라미 버튼 스타일 */
+.circle-button {
+  width: 8vw; /* 화면 너비의 8% */
+  height: 4vh; /* 화면 높이의 4% */
+  background-color: #6B7E88;
+  border-radius: 4vw;
+  border: 0.15vw solid #000;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 1vw 0px #269AD4;
+  margin-top: 2vh;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 동그라미 버튼 안 텍스트 스타일 */
+.button-text {
+  color: black;
+  font-size: 25px; /* 화면 너비의 2% */
+  font-family: "Mplus 1p", sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.custom-box {
+  width: 15vw;
+  height: 5vh;
+  background: #ddd;
+  box-shadow: 0px 0px 0.7vw #6B7E88;
+  border-radius: 5vw;
+  border: 0.15vw #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#home-button {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 3vw;
+  font-size: 2vw; /* 화면 너비의 2% */
+  cursor: pointer;
+}
+
+#home-button:hover {
+  background-color: #ddd;
+}
+a {
+  display: inline-block; /* 기본 display 속성을 고정 */
+  text-decoration: none; /* 링크 스타일 제거 */
+}

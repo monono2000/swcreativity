@@ -1,0 +1,611 @@
+/* 공통 스타일 초기화 */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFF;
+  flex-wrap: nowrap;
+  flex-direction: column
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* 중앙 정렬 */
+  text-align: center;
+  font-family: 'SB AggroOTF', sans-serif;
+  font-size: 30px;
+  color: #000;
+  width: fit-content;
+  height: fit-content;
+  gap: 33px; /* 요소들 간 간격 */
+}
+
+/* Intro Screen 스타일 */
+#intro-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 높이를 100% 차지 */
+  background-color: #ffffff;
+  position: relative; /* 절대 위치 요소의 부모로 설정 */
+  flex-direction: column; /* 세로로 배치 */
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-family: "Hakgyoansim Ttwimteul";
+  font-size: 90px;
+  font-weight: 400;
+  line-height: normal;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 319px;
+  background: url('nawangLogo.png') lightgray center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title2 {
+  color: #fff;
+  font-family: "Hakgyoansim Ttwimteul";
+  font-size: 90px;
+  font-weight: 400;
+  line-height: normal;
+  width: 218px;
+  height: 221px;
+  flex-shrink: 0;
+  border-radius: 319px;
+  background: url('nawangLogo.png') lightgray center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+#next-btn {
+  width: 500px;
+  height: 80px;
+  border-radius: 301.079px;
+  background-color: #000;
+  color: #f0f0f0;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+#next-btn:hover {
+  background-color: #333;
+}
+
+/* 브랜드 이름 왼쪽 상단에 배치 */
+#brand-name {
+  color: #000;
+  text-align: center;
+  font-family: "Hakgyoansim Ttwimteul";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute; /* 절대 위치로 배치 */
+  top: 20px; /* 화면 상단에서 20px 떨어진 위치 */
+  left: 20px; /* 화면 왼쪽에서 20px 떨어진 위치 */
+}
+
+/* Footer 스타일 (우측 하단에 배치) */
+#footer {
+  position: absolute; /* 화면 하단에 고정 */
+  bottom: 20px; /* 하단에서 20px 떨어진 위치 */
+  right: 20px; /* 우측에서 20px 떨어진 위치 */
+  color: #000;
+  text-align: center;
+  font-family: "Jalpullineunoneul";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 사용자 정보 입력 섹션 위치 조정 */
+#user-info {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* 로고 아래로 고정 */
+  top: 250px; /* 로고 아래에 위치하게 조정 (로고 크기와 간격에 맞춰 조정) */
+  width: 100%; /* 화면의 100% 너비로 설정 */
+}
+
+/* 각 카테고리들을 수평으로 배치 */
+#user-info form {
+  display: flex;
+  flex-wrap: wrap; /* 항목들이 넘치지 않도록 wrap을 사용 */
+  justify-content: space-between; /* 카테고리들 간의 간격을 일정하게 */
+  gap: 10px; /* 카테고리 간의 간격 */
+}
+
+/* 카테고리 스타일 */
+.category {
+  display: flex;
+  flex-direction: column; /* 각 카테고리 항목들은 세로로 배치 */
+  align-items: flex-start; /* 항목들을 왼쪽 정렬 */
+  width: 200px; /* 각 카테고리 너비 */
+  margin-left: 0; /* 왼쪽 여백 제거 */
+  margin-bottom: 20px; /* 카테고리 간의 간격 (유동적으로 수정 가능) */
+}
+
+/* 각 카테고리 제목 스타일 */
+.category h3 {
+  font-size: 20px;
+  margin-bottom: 15px; /* 제목과 항목 간의 간격 (유동적으로 수정 가능) */
+}
+
+#stroke{
+  width: 1169px;
+  height: 417px;
+  flex-shrink: 0;
+  border-radius: 51px;
+  border: 3px solid #000;
+}
+
+/* 컨텐츠 영역 공통 */
+#user-info, #second-content section {
+  position  : absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+}
+
+/* Color 카테고리 스타일 수정 */
+#user-info .category.color {
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  width: 200px; /* 동일한 너비 설정 */
+  margin-left: 0; /* 왼쪽 여백 제거 */
+  margin-bottom: 20px;
+  padding-left: 0; /* 왼쪽 여백을 추가로 제거 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+/* Color 카테고리의 제목 스타일 수정 */
+#user-info .category.color h3 {
+  text-align: left; /* 제목을 왼쪽 정렬 */
+  margin-left: 0; /* 제목의 왼쪽 여백 제거 */
+}
+
+
+/* checkbox-group - 항목들을 왼쪽 정렬 */
+.checkbox-group {
+  display: grid;
+  grid-template-rows: repeat(5, auto); /* 5개의 항목을 세로로 배치 */
+  gap: 15px; /* 항목 간의 간격 조정 */
+  justify-items: start; /* 항목들을 왼쪽 정렬 */
+  width: 100%;
+  max-width: 800px;
+  margin-left: 0; /* 왼쪽 여백 제거 */
+  padding-left: 0; /* 왼쪽 여백 추가 제거 */
+}
+
+/* checkbox-group label 스타일 */
+.checkbox-group label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 0; /* 라벨의 왼쪽 여백 제거 */
+}
+
+
+.checkbox-group input[type="radio"] {
+  margin-right: 10px; /* 체크박스와 레이블 사이 여백 */
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%; /* 라디오 버튼을 동그랗게 */
+}
+
+.checkbox-group input[type="radio"]:checked {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* 입력 필드와 텍스트 배치 */
+.input-group {
+  display: flex;
+  align-items: center; /* 입력 필드와 텍스트를 수평으로 정렬 */
+  gap: 10px; /* 텍스트와 입력 필드 사이의 간격 */
+  margin-bottom: 15px; /* 항목 간의 간격 */
+}
+
+/* label 스타일 */
+.input-group label {
+  font-size: 16px;
+  width: 100px; /* 텍스트 크기를 고려한 너비 설정 */
+  text-align: center; /* 텍스트를 오른쪽 정렬 */
+}
+
+/* 숫자 입력 필드 스타일 */
+.input-group input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* 입력 필드의 너비 */
+  max-width: 120px; /* 필드의 최대 너비 */
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 단위 (CM, KG) 스타일 */
+.input-group .unit {
+  font-size: 16px;
+  margin-left: 5px; /* 단위와 입력 필드 사이의 간격 */
+}
+
+
+/* 버튼 스타일 */
+button[type="submit"] {
+  width: 171px;
+  height: 75px;
+  flex-shrink: 0;
+  background-color: #F2F2F2;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 81px;
+  border: 3px solid #000;
+  box-shadow: 0px 0px 10.6px 0px #6B7E88;
+  z-index: 10;
+  color: #000;
+  text-align: center;
+  font-family: Jalpullineunharu;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* 다른 버튼들 위치 고정 */
+button[type="submit"], #next-btn, #result-btn {
+  position: absolute;
+  bottom: -3vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 기본적인 드롭다운 요소 스타일 */
+select {
+  width: 90%; /* 드롭다운 너비 */
+  padding: 10px; /* 드롭다운 내부 여백 */
+  font-size: 16px; /* 글씨 크기 */
+  border: 2px solid #ccc; /* 테두리 색상 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  background-color: #f9f9f9; /* 배경 색 */
+  appearance: none; /* 기본 드롭다운 화살표 숨기기 */
+  cursor: pointer; /* 마우스 커서 모양 */
+  box-sizing: border-box; /* 박스 모델 설정 */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* 효과 추가 */
+}
+
+select:focus {
+  border-color: #5b9bd5; /* 포커스 시 테두리 색상 */
+  background-color: #eaf4fc; /* 포커스 시 배경 색상 */
+}
+
+select option {
+  padding: 10px; /* 옵션 내부 여백 */
+  font-size: 16px; /* 글씨 크기 */
+}
+
+/* 드롭다운 화살표 커스터마이즈 */
+select::-ms-expand {
+  display: none; /* IE에서 드롭다운 화살표 제거 */
+}
+
+/* 드롭다운 화살표를 커스터마이즈 */
+.select-wrapper {
+  position: relative; /* 화살표를 감싸는 요소 */
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: '\25BC'; /* 아래 화살표 */
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* 화살표 클릭 방지 */
+  color: #888; /* 화살표 색상 */
+}
+
+/* 드롭다운 옵션 hover 스타일 */
+select option:hover {
+  background-color: #dceefc; /* 옵션 호버 시 배경 색상 */
+}
+
+/* 드롭다운의 외곽선 그림자 추가 */
+select:focus {
+  box-shadow: 0 0 5px rgba(91, 155, 213, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second Content Section 스타일 */
+#second-content {
+  display: block; /* 기본 블록 요소로 설정 */
+  padding: 40px;
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  visibility: visible; /* 요소가 보이도록 설정 */
+  opacity: 1; /* 불투명도 설정 */
+  transition: opacity 0.5s ease-in-out; /* 부드럽게 나타나도록 전환 효과 추가 */
+}
+
+/* section 안의 스타일 */
+#second-content section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#second-content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#second-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+
+/* 공통 Header 스타일 */
+header {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Hakgyoansim Ttwimteul";
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header-box: 상단 중앙 박스 */
+.header-box {
+  width: 24vw;
+  height: 8vh;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 1vw #6B7E88;
+  border-radius: 4vw;
+  border: 0.2vw solid black;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-text {
+  color: #000;
+  text-align: center;
+  font-family: "Mplus 1p";
+  font-size: 3.5vw;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mainheader {
+  position: absolute;
+  top: 0vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 5vw;
+}
+
+/* large-box: 큰 박스를 담는 박스 */
+.large-box {
+  width: 90vw;
+  height: 60vh;
+  border-radius: 4vw;
+  border: 0.25vw solid black;
+  display: flex;
+  padding: 12vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: absolute;
+  top: 25vh;
+  left: 5vw;
+}
+
+/* medium-box: 각 big-box와 버튼을 묶는 박스 */
+.medium-box {
+  width: 10vw; /* 화면 너비의 80% */
+  height: 20vh; /* 화면 높이의 40% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh; /* big-box와 버튼 사이 간격 */
+  height: 100%;
+}
+
+/* big-box: 각 큰 박스 */
+.big-box {
+  width: 25vw;
+  height: 45vh;
+  border-radius: 1vw;
+  border: 0.15vw solid #000;
+  padding: 1vw;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* small-box: 작은 박스 */
+.small-box {
+  width: 10vw; /* 화면 너비의 25% */
+  height: 20vh; /* 화면 높이의 40% */
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+/* 이미지 스타일 */
+.image {
+  width: 15vw;
+  height: 20vh;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 0.4vw rgba(0, 0, 0, 0.2);
+}
+
+/* 동그라미 버튼 스타일 */
+.circle-button {
+  width: 8vw; /* 화면 너비의 8% */
+  height: 4vh; /* 화면 높이의 4% */
+  background-color: #6B7E88;
+  border-radius: 4vw;
+  border: 0.15vw solid #000;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 1vw 0px #269AD4;
+  margin-top: 2vh;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 동그라미 버튼 안 텍스트 스타일 */
+.button-text {
+  color: black;
+  font-size: 2vw; /* 화면 너비의 2% */
+  font-family: "Mplus 1p", sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.custom-box {
+  width: 15vw;
+  height: 5vh;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 0.7vw #6B7E88;
+  border-radius: 5vw;
+  border: 0.15vw solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#home-button {
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 3vw;
+  font-size: 2vw; /* 화면 너비의 2% */
+  cursor: pointer;
+}
+
+#home-button:hover {
+  background-color: #f2f2f2;
+}

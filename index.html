@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>옷나왕</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- Main Content -->
+   <div id="main-content">
+    <div id="user-info">
+      <div class="title2"></div>
+      <h2>사용자 정보를 입력해주세요.</h2>
+      <!-- form에 id="user-info-form" 추가 -->
+      <form id="user-info-form">
+        <div class="category">
+          <h3>Season</h3>
+          <div class="checkbox-group">
+            <label><input type="radio" name="season" value="봄">봄</label>
+            <label><input type="radio" name="season" value="여름">여름</label>
+            <label><input type="radio" name="season" value="가을">가을</label>
+            <label><input type="radio" name="season" value="겨울">겨울</label>
+          </div>
+        </div>
+        <div class="category">
+          <h3>Style</h3>
+          <div class="checkbox-group">
+            <label><input type="radio" name="style" value="캐주얼">캐주얼</label>
+            <label><input type="radio" name="style" value="스트릿">스트릿</label>
+            <label><input type="radio" name="style" value="아메카지">아메카지</label>
+            <label><input type="radio" name="style" value="미니멀">미니멀</label>
+          </div>
+        </div>
+        <div class="category" id="color-options" style="display: none;">
+          <h3>Color</h3>
+          <select id="color-select" name="color">
+            <option value="">색상을 선택하세요</option>
+          </select>
+        </div>
+        <div class="category fit">
+          <h3>Fit</h3>
+          <div class="input-group">
+            <label for="height">키</label>
+            <input type="number" id="height" min="100" max="300" placeholder="100~300">
+            <span class="unit">CM</span>
+          </div>
+          <div class="input-group">
+            <label for="weight">체중</label>
+            <input type="number" id="weight" min="30" max="200" placeholder="30~200">
+            <span class="unit">KG</span>
+          </div>
+          <div class="input-group">
+            <label for="waist">허리<br>둘레</label>
+            <input type="number" id="waist" min="30" max="200" placeholder="30~200">
+            <span class="unit">CM</span>
+          </div>
+        </div>
+        <button id="transferButton" type="submit" disabled>다음</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="brand-name">옷나왕</div>
+  <div id="footer">
+    <p>designed by<br>패줄개</p>
+  </div>
+
+  <!-- nudeogi -->
+  <button id="next-btn" style="display: none;"></button>
+  <button id="result-btn" style="display: none;"></button>
+  
+  <script src="script.js"></script>
+</body>
+</html>

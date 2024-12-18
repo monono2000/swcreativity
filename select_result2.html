@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>옷나왕</title>
+  <link rel="stylesheet" href="select_result.css">
+</head>
+<body>
+
+    <!-- Result Content -->
+    <div id="result-content">
+        <div class="mainheader">옷나왕</div>
+    
+        <!-- 상단 중앙에 위치할 박스 -->
+        <div class="header-box">선택한 추천 스타일</div>
+        
+        <div class="product-box">
+            <!-- 상품 리스트 -->
+            <div class="product-container">
+                <!-- 첫 번째 상품 -->
+                <div class="product-item" data-index="0">
+                    <a href="" class="product-link" id="product-link-0">
+                        <img src="" alt="상품 1" class="product-image" id="product-image-0">
+                    </a>
+                    <div class="product-info">
+                        <div class="product-link-text">상품 링크: 위 이미지 클릭</div>
+                        <div class="product-name" id="product-name-0">상품명 1</div>
+                        <div class="product-brand" id="product-brand-0">브랜드 1</div>
+                        <div class="product-price" id="product-price-0">₩50,000</div>
+                    </div>
+                </div>
+                
+                <!-- 두 번째 상품 -->
+                <div class="product-item" data-index="1">
+                    <a href="" class="product-link" id="product-link-1">
+                        <img src="" alt="상품 2" class="product-image" id="product-image-1">
+                    </a>
+                    <div class="product-info">
+                        <div class="product-link-text">상품 링크: 위 이미지 클릭</div>
+                        <div class="product-name" id="product-name-1">상품명 2</div>
+                        <div class="product-brand" id="product-brand-1">브랜드 2</div>
+                        <div class="product-price" id="product-price-1">₩60,000</div>
+                    </div>
+                </div>
+                
+                <!-- 세 번째 상품 -->
+                <div class="product-item" data-index="2">
+                    <a href="" class="product-link" id="product-link-2">
+                        <img src="" alt="상품 3" class="product-image" id="product-image-2">
+                    </a>
+                    <div class="product-info">
+                        <div class="product-link-text">상품 링크: 위 이미지 클릭</div>
+                        <div class="product-name" id="product-name-2">상품명 3</div>
+                        <div class="product-brand" id="product-brand-2">브랜드 3</div>
+                        <div class="product-price" id="product-price-2">₩70,000</div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="custom-box">
+        <button id="home-button" onclick="goHome()">홈으로 돌아가기</button>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p>designed by<br>패줄개</p>
+    </div>
+    <div class="title4"></div>
+
+    <!-- PapaParse 라이브러리 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="select_result2.js"></script>
+
+</body>
+</html>
